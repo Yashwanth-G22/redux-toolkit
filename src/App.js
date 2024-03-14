@@ -1,8 +1,18 @@
+import 'reflect-metadata';
+import { Child } from "./inversify/child";
 import { YouTubeForm } from "./Components/react-hook-form/youTubeForm";
+import { Provider } from 'inversify-react';
+import { container } from './inversify/dependencies';
+import React from 'react';
 
-function App() {
+const App: React.FC = () =>  {
   return (
-    <div><YouTubeForm /></div>
+    <Provider container={container}>
+      <div>
+        <YouTubeForm />
+        <Child />
+      </div>
+    </Provider>
   );
 }
 
