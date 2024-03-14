@@ -1,19 +1,27 @@
-import 'reflect-metadata';
-import { Child } from "./inversify/child";
-import { YouTubeForm } from "./Components/react-hook-form/youTubeForm";
-import { Provider } from 'inversify-react';
-import { container } from './inversify/dependencies';
-import React from 'react';
+// import 'reflect-metadata';
+// import { Child } from "./inversify/child";
+// import { YouTubeForm } from "./Components/react-hook-form/youTubeForm";
+// // import { Provider } from 'inversify-react';
+// // import { container } from './inversify/dependencies';
+// import React from 'react';
 
-const App: React.FC = () =>  {
+import { YouTubeForm } from "./Components/react-hook-form/youTubeForm"
+
+// const App = () =>  {
+//   return (
+//       <div>
+//         <YouTubeForm />
+//         <Child />
+//       </div>
+//   );
+// }
+
+
+const App = () => {
   return (
-    <Provider container={container}>
-      <div>
-        <YouTubeForm />
-        <Child />
-      </div>
-    </Provider>
-  );
+    <div>
+      <YouTubeForm />
+    </div>
+  )
 }
-
 export default App;
