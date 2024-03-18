@@ -5,7 +5,7 @@
 // // import { container } from './inversify/dependencies';
 // import React from 'react';
 
-import { YouTubeForm } from "./Components/react-hook-form/youTubeForm"
+import { YouTubeForm } from "../Components/react-hook-form/youTubeForm"
 
 // const App = () =>  {
 //   return (
